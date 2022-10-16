@@ -238,7 +238,7 @@ def overlap_matrix_for_sequence_assembly(sas_score, sarc_score, lenght, min_s):
     return overlap_matrix
 
 def create_score_csv(score_matrix,name):
-    """Burada dosya ismine gore olusturdugum skor matrislerini dosyalama yaptigim yer dosyalama icin csv kutuphanesini kullandim."""
+    """Burada dosya ismine gore olusturdugum skor matrislerini dosyaladığım metod. Dosyalama icin csv kutuphanesini kullandim."""
     dosya_adi = str(name + ".csv")
     csv_dosya = open(dosya_adi, "w", newline='')
     yazici = csv.writer(csv_dosya, delimiter=',')
